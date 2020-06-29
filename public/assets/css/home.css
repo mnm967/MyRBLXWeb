@@ -1,0 +1,88 @@
+body{
+    background-color: #F4F4F8 !important;
+}
+.title {
+    color: #363636;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    text-align: center;
+    cursor: default;
+}
+.subtitle {
+    color: #4a4a4a;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: default;
+}
+.container{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.button-div{
+    margin: auto;
+    width: fit-content;
+}
+.recent-title{
+    padding-bottom: 8px;
+}
+.user-item{
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+.user-img-div{
+    width: fit-content
+}
+.user-img{
+    border: 2px solid #eee; 
+    border-radius: 50%!important; 
+    height: 96px
+}
+.user-name-text{
+    font-size: 20px; 
+    font-weight: 800; 
+    margin-bottom: 16px; 
+    margin-top: 8px;
+    text-align: center
+}
+.user-earned-text{
+    font-size: 16px; 
+    text-align: center
+}
+.user-amount-button{
+    cursor: default;
+}
+.user-amount-button-div{
+    width: fit-content;
+}
+.white-container{
+    background-color: #fff; 
+    padding: 48px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2),0 2px 3px 0 rgba(0,0,0,0.19) !important;
+}
+.white-container-instructions{
+    background-color: #fff; 
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2),0 2px 3px 0 rgba(0,0,0,0.19) !important;
+}
+.instruction-image{
+    height: 100px;
+    margin-bottom: 24px;
+}
+.instruction-title{
+    font-size: 1.25rem;
+}
+.instruction-subtitle{
+    font-size: 1.1rem;
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1300px !important;
+    }
+}

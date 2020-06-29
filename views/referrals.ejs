@@ -1,0 +1,92 @@
+<%- include('includes/header.ejs') -%>
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12">
+            <div class="holder-container">
+              <div class="main-title-holder">
+                <h2 class="main-title-text">Want MORE Robux?</h2>
+              </div>
+              <div class="content-holder">
+                <p class="main-content-text">Copy this message and paste it in multiple discords for a chance to win <strong style="color: #48c774">FREE</strong> Robux!</p>
+                <textarea id="referral-message" class="referral-textarea referralTextArea" readonly="readonly" onclick="copyReferralMessage()" rows="4"></textarea>
+                <div class="copy-button-holder m-auto" style="display: grid; justify-content: center;">
+                  <button class="btn mx-1 copy-button grow" onclick="copyReferralMessage()">Copy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12 row">
+            <div class="col-12">
+              <div class="holder-container mx-0">
+                <div class="main-title-holder">
+                  <h2 class="main-title-text">Referrals</h2>
+                </div>
+                <div class="content-holder">
+                  <p class="main-content-text">Copy this URL and share it to others earn <strong style="color: #48c774">FREE</strong> Robux when others complete offers
+                    <br>
+                    <span style="font-size: 1rem">You will earn 5% of earnings from everyone who joins using this link!</span>
+                  </p>
+                  <div class="justify-content-center" style="display: grid;">
+                    <div class="copy-button-holder m-auto">  
+                      <input id="referral-link" class="referral-link-input referralCopyInputText" style="border-radius: 6px !important;" readonly="readonly" onclick="copyReferralLink()"/>
+                    </div>
+                    <div class="copy-button-holder mx-auto my-4">
+                      <button id="referral-link" class="btn copy-link-button grow" onclick="copyReferralLink()">Copy</button>
+                    </div>
+                  </div>   
+              </div>
+              </div>
+            </div>
+            <div class="col-12 row m-0" style="padding: 0">
+              <div class="col-md-12 col-lg-6">
+                <div class="holder-container mx-0">
+                  <div class="main-title-holder">
+                    <h2 class="main-title-text">Users Referred</h2>
+                  </div>
+                  <div class="content-holder justify-content-center">
+                    <h2 class="main-title-text totalUserReferrals" style="font-size: 1.75rem">0</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div class="holder-container mx-0">
+                    <div class="main-title-holder">
+                      <h2 class="main-title-text">Robux Earned</h2>
+                    </div>
+                    <div class="content-holder justify-content-center">
+                      <h2 class="main-title-text totalReferralPointsEarned" style="font-size: 1.75rem">0</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="holder-container-white mx-0">
+                  <div class="main-title-holder" style="border-bottom: 0.5px solid #bdbdbd; margin-bottom: 16px">
+                    <h2 class="main-title-text">Recent Referral Earnings:</h2>
+                  </div>
+                  <div class="row recentReferralEarnings" style="padding-left: 24px;">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script>
+    function copyReferralLink() {
+      var copyText = document.getElementById("referral-link");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+    }
+    function copyReferralMessage() {
+      var copyText = document.getElementById("referral-message");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+    }
+  </script>
+<%- include('includes/footer.ejs') -%>

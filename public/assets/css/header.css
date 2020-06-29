@@ -1,0 +1,51 @@
+.main-navbar{
+    min-height: 96px; 
+    background-color: #2C3E50
+}
+.active-item{
+    background-color: #fff !important;
+    border-radius: 8px;
+    color: #2C3E50 !important;
+}
+.active-nav-link{
+    color: #2C3E50 !important;
+}
+.nav-item-link{
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: .5rem 1rem;
+}
+.nav-item-link:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.robux-button{
+    background-color: #3298DC;
+    border-color: #3298DC !important;
+    color: #fff;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+.redeem-button{
+    background-color: #48C774;
+    border-color: #48C774 !important;
+    color: #fff;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+.logout-button{
+    background-color: #48C774;
+    border-color: #48C774 !important;
+    color: #fff;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+.grow { transition: all .2s ease-in-out !important; }
+.grow:hover { transform: scale(1.1); }

@@ -1,0 +1,30 @@
+{
+  "name": "myrblx.com",
+  "version": "1.0.0",
+  "description": "MyRBLX.com Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "robux",
+    "roblox",
+    "free",
+    "robux"
+  ],
+  "author": "Mothuso Malunga",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "figlet": "^1.4.0",
+    "mathjs": "^7.0.1",
+    "mysql": "^2.18.1",
+    "noblox.js": "^4.6.0",
+    "node-cron": "^2.0.3",
+    "request-ip": "^2.1.3",
+    "socket.io": "^2.3.0"
+  }
+}

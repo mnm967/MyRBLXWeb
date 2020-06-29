@@ -1,0 +1,91 @@
+<%- include('includes/header.ejs') -%>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-lg-6">
+                <div class="green-container my-2 row m-0">
+                  <div class="col-6" style="padding: 0">
+                    <img src="assets/img/icons/robux_icon.png" style="height: 60px;">
+                  </div>
+                  <div class="col-6" style="padding: 0">
+                    <div class="my-1">
+                      <p class="stats-title">Joined Users</p>
+                      <p class="stats-value giveawayJoinedUsers">0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 col-lg-6">
+                <div class="red-container my-2 row m-0">
+                  <div class="col-6" style="padding: 0">
+                    <img src="assets/img/icons/robux_drop.png" style="height: 60px;">
+                  </div>
+                  <div class="col-6" style="padding: 0">
+                    <div class="my-1">
+                      <p class="stats-title">Prize</p>
+                      <p class="stats-value giveawayPrizeAmount">0 R$</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center my-4">
+              <div class="col-12" style="text-align: center">
+                <p class="title">Ends In...</p>
+                <div class="row m-0">
+                  <div class="col-4">
+                    <div class="time-container giveawayCountdownHours">
+                      00
+                    </div>
+                    <p class="subtitle time-text">Hours</p>
+                  </div>
+                  <div class="col-4">
+                    <div class="time-container giveawayCountdownMinutes">
+                      00
+                    </div>
+                    <p class="subtitle time-text">Minutes</p>
+                  </div>
+                  <div class="col-4">
+                    <div class="time-container giveawayCountdownSeconds">
+                      00
+                    </div>
+                    <p class="subtitle time-text">Seconds</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center my-2">
+              <div class="col-12">
+                <div class="holder-container-white mx-0">
+                  <div class="content-holder" style="padding: 16px !important">
+                    <form class="mx-auto giveawayRecaptchaForm"  action="?" method="POST" style="display: grid;">
+                      <div class="g-recaptcha" style="width: fit-content; margin-top: 0px; margin: auto; margin-bottom: 24px" data-sitekey="6Lez6v4UAAAAAMP08eRkmdH_ZM-Nktd9YpysTVFD"></div>
+                      <div class="copy-button-holder m-auto">  
+                        <button class="btn giveaway-enter-button grow giveawayEnterButton" type="submit">Enter</button>
+                      </div>
+                      <p class="giveaway-content-text">There are currently <strong class="giveawayPromptJoinedUsers" style="color: #3298DC">1,458</strong> users entered in this giveaway.
+                                                    Complete <span style="color: #3298DC">offers</span> to increase your chance of winning giveaways!</p>
+                    </form>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="col-12">
+                <div class="holder-container-white my-2 mx-0">
+                  <div class="main-title-holder-white" style="margin-bottom: 16px">
+                    <h2 class="main-title-text-white" style="text-align: start">Recent Winners:</h2>
+                  </div>
+                  <div class="giveawayRecentWinners">
+                        
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+    <%- include('includes/footer.ejs') -%>

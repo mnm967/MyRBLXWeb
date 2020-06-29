@@ -1,0 +1,24 @@
+<%- include('includes/header.ejs') -%>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center mx-4">
+                <div class="col-12" style="display: grid;">
+                    <div class="copy-button-holder m-auto">  
+                        <button class="btn currency-button">1 R$ = 1 Robux</button>
+                    </div>
+                </div>
+                <div class="payout-container col-lg-6 col-md-9 col-sm-12">
+                  <form class="redeemForm" method="POST" action="?">
+                    <h3 class="payout-title">Payout Details</h3>
+                    <h3 class="payout-input-label">Roblox Username:</h3>
+                    <input type="text" class="payout-input redeemUsernameInput" readonly required>
+                    <h3 class="payout-input-label">Robux Amount:</h3>
+                    <input type="number" class="payout-input robuxAmountInput" placeholder="Enter A Number" required>
+                    <a class="redeemGroupButton" href="" target="_blank"><button class="btn payout-button-red grow" type="button">Join Roblox Group (VERY IMPORTANT)</button></a>
+                    <button class="btn payout-button-green grow redeemButton" type="submit">Give me Robux!!!</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('includes/footer.ejs') -%>

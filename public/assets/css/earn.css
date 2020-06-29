@@ -1,0 +1,92 @@
+body{
+    background-color: #F4F4F8 !important;
+}
+.blue-container{
+    padding: 24px;
+    background-color: #3298DC;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2),0 2px 3px 0 rgba(0,0,0,0.19) !important;
+}
+.green-container{
+    padding: 24px;
+    background-color: #48C774;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2),0 2px 3px 0 rgba(0,0,0,0.19) !important;
+}
+.red-container{
+    padding: 24px;
+    background-color: #F14668;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2),0 2px 3px 0 rgba(0,0,0,0.19) !important;
+}
+.stats-title{
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: end;
+    font-weight: bold;
+}
+.stats-value{
+    display: block;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: end;
+}
+.buttons-container{
+    padding: 16px;
+    background-color: #2C3E50;
+    box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2),0 0px 3px 0 rgba(0,0,0,0.19) !important;
+}
+.social-join-button-red{
+    background-color: #F14668;
+    border-color: #F14668 !important;
+    color: #fff;
+    width: 100%;
+    border-radius: 4px !important;
+}
+.social-join-button-blue{
+    background-color: #3298DC;
+    border-color: #3298DC !important;
+    color: #fff;
+    width: 100%;
+    border-radius: 4px !important;
+}
+.social-join-button-green{
+    background-color: #48C774;
+    border-color: #48C774 !important;
+    color: #fff;
+    width: 100%;
+    border-radius: 4px !important;
+}
+.earn-white-container{
+    padding: 24px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2),0 2px 3px 0 rgba(0,0,0,0.19) !important;
+}
+.earn-warning-container{
+    padding: 24px;
+    background-color: #F14668;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: #fff;
+}
+.earn-offerwalls-container{
+    padding-bottom: 24px;
+}
+.offerwall-button{
+    background-color: #3298DC;
+    border-color: #3298DC !important;
+    color: #fff;
+    width: 100%;
+    border-radius: 0px !important;
+}
+.offerwall-unselected{
+    background: transparent !important;
+    color: #3298dcbd !important;
+}

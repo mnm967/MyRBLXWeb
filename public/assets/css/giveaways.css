@@ -1,0 +1,31 @@
+.time-container{
+    border: 2px solid #48C774;
+    padding: 20px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    color: #48C774;
+}
+.time-text{
+    color: #48C774 !important;
+    font-weight: bold;
+}
+.giveaway-content-text{
+    font-size: 1rem;
+    color: #2C3E50;
+    margin: 0px !important;
+    text-align: center;
+    cursor: default;
+}
+.giveaway-enter-button{
+    background-color: #3298DC;
+    border-color: #3298DC !important;
+    color: #fff;
+    height: 48px;
+    margin-bottom: 32px;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MyRBLX.com | Earn Free Robux</title>
+    <link rel="shortcut icon" href="assets/img/money-bag.svg" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="assets/css/header.css" rel="stylesheet" />
+    <link href="assets/css/home.css" rel="stylesheet" />
+    <link href="assets/css/header.css" rel="stylesheet" />
+    <link href="assets/css/referrals.css" rel="stylesheet" />
+    <link href="assets/css/promo-codes.css" rel="stylesheet" />
+    <link href="assets/css/home.css" rel="stylesheet" />
+    <link href="assets/css/earn.css" rel="stylesheet" />
+    <link href="assets/css/giveaways.css" rel="stylesheet" />
+    <link href="assets/css/redeem.css" rel="stylesheet" />
+    <link href="assets/css/modal.css" rel="stylesheet" />
+
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "b16e570d-ce15-4daf-addd-13cd19b0af3d",
+        });
+      });
+    </script>
+
+    <title></title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- For Header & Footer -->
+      <ins class="adsbygoogle"
+          style="display:none"
+          data-ad-client="ca-pub-5990916854968300"
+          data-ad-slot="3174257510"
+          data-ad-format="link"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+  </head>
+  <body>
+    <% if(user_logged_in == false){ %>
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="LoginMadal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: #2C3E50">
+                <div class="modal-body">
+                  <form method="POST" action="userlogin">
+                    <h3 class="payout-title" style="font-weight: bold">Login to MyRBLX.com</h3>
+                    <h3 class="payout-title" style="margin-bottom: 24px">Enter your Roblox Username to Start earning <strong>FREE</strong> Robux!!!</h3>
+                    <h3 class="payout-input-label">Roblox Username:</h3>
+                    <input type="text" name="robloxusername" class="payout-input" placeholder="Enter Your Username">
+                    <button class="btn payout-button-green grow" type="submit">Log In</button>
+                    <button class="btn payout-button-red grow" data-dismiss="modal">Cancel</button>
+                    </div>
+                  </form>
+            </div>
+            </div>
+        </div>
+    <% } %>
+    <%- include('modals.ejs') -%>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/money-bag.svg" width="96" height="96" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto my-3">
+          <li class="<%= page == 'home' ? 'nav-item active-item' : 'nav-item grow' %>">
+            <a class="<%= page == 'home' ? 'nav-item-link active-nav-link' : 'nav-item-link' %>" href="home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="<%= page == 'earn' ? 'nav-item active-item' : 'nav-item grow' %>">
+            <a class="<%= page == 'earn' ? 'nav-item-link active-nav-link' : 'nav-item-link' %>" href="earn">Earn</a>
+          </li>
+          <li class="<%= page == 'referrals' ? 'nav-item active-item' : 'nav-item grow' %>">
+            <a class="<%= page == 'referrals' ? 'nav-item-link active-nav-link' : 'nav-item-link' %>" href="referrals">Referrals</a>
+          </li>
+          <li class="<%= page == 'giveaways' ? 'nav-item active-item' : 'nav-item grow' %>">
+            <a class="<%= page == 'giveaways' ? 'nav-item-link active-nav-link' : 'nav-item-link' %>" href="giveaways">Giveaways</a>
+          </li>
+          <li class="<%= page == 'promos' ? 'nav-item active-item' : 'nav-item grow' %>">
+            <a class="<%= page == 'promos' ? 'nav-item-link active-nav-link' : 'nav-item-link' %>" href="promos">Promo Codes</a>
+          </li>
+        </ul>
+        <% if(user_logged_in){ %>
+            <a href="redeem"><button class="btn my-sm-0 mx-1 robux-button grow headerRobuxAmount" type="submit">0 R$</button></a>
+            <a href="redeem"><button class="btn my-sm-0 mx-1 redeem-button grow" type="submit">Redeem</button></a>
+            <a href="logoutsite"><button class="btn my-sm-0 mx-1 logout-button grow">Logout</button></a>
+        <% } else { %>
+            <button class="btn my-sm-0 mx-1 logout-button grow" data-toggle="modal" data-target="#login-modal">Log In</button>
+        <% } %>
+      </div>
+    </nav>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- For Header & Footer -->
+      <ins class="adsbygoogle"
+          style="display: grid; align-self: center; width: 100%; margin-top: 36px; justify-content: center;"
+          data-ad-client="ca-pub-5990916854968300"
+          data-ad-slot="2435890919"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    
+    <% if(showModal == true) {%>
+      <script type="text/javascript">
+        $(window).on('load',function(){
+            $('#login-modal').modal('show');
+        });
+      </script>
+    <% } %>

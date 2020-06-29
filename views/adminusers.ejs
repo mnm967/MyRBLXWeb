@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>MyRBLX.com Admin</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+        <div class="sidebar-brand-text mx-3">MyRBLX.com</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link" href="adminsettings">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Group Settings</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="adminauth">
+          <i class="fas fa-fw fa-lock"></i>
+          <span>Admin Settings</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="adminusers">
+          <i class="fas fa-fw fa-user"></i>
+          <span>User Points</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="adminwithdrawals">
+          <i class="fas fa-fw fa-user"></i>
+          <span>Withdrawals</span></a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="adminpromos">
+          <i class="fas fa-fw fa-money-bill"></i>
+          <span>Promo Codes</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="adminlogout">
+          <i class="fas fa-fw fa-sign-out-alt"></i>
+          <span>Log Out</span></a>
+      </li>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small adminSearchInput" placeholder="Search User" aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary userSearchButton" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto d-none">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small userSearchInput" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">User Points</h1>
+          </div>
+
+          <div class="row userSearchRow">
+            
+          </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+  <script>
+    $(".userSearchButton").click(() => {
+        $.post("/searchusers",{term: $(".adminSearchInput").val()}, function(result){ 
+          var uArray = result['found_users'];
+          var finalHTML = "";
+          for(var x in uArray){
+              var u = uArray[x];
+              finalHTML += `<div class="col-xl-6 col-md-6 mb-4 userCard-${u['id']}" >
+                <div class="card border-left-primary success shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 userUsername-${u['id']}">${u['username']}</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="userCurrentPoints-${u['id']}">${u['points']}</span> Points</div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-user fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                      <div class="row">
+                        <div class="input-group my-2">
+                          <input type="number" name="points-input-box" class="form-control bg-light border-0 small userPointsInput-${u['id']}" placeholder="Enter Value to +/-">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 col-xl-6 col-6">
+                          <button type="submit" name="add-points-button" class="btn btn-md btn-success shadow-sm my-2 w-100 userAddPointsButton" onclick="addPoints(${u['id']})" id="${u['id']}">+</button>
+                        </div>
+                        <div class="col-md-6 col-xl-6 col-6">
+                          <button type="submit" name="subtract-points-button" class="btn btn-md btn-danger shadow-sm my-2 w-100 userSubtractPointsButton" onclick="subtractPoints(${u['id']})" id="${u['id']}">-</button>
+                        </div>
+                        <div class="col-md-12 col-xl-12 col-12">
+                          <button type="submit" name="subtract-points-button" class="btn btn-md btn-danger shadow-sm my-2 w-100" onclick="banUser(${u['id']})" id="${u['id']}">Ban User</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>`;
+          }
+          $(".userSearchRow").html(finalHTML);
+        });
+    });
+    function addPoints(id){
+      var currentPoints = parseInt($(".userCurrentPoints-"+id).html());
+      var addPoints = parseInt($(".userPointsInput-"+id).val());
+
+      var newPoints = currentPoints + addPoints;
+      $(".userCurrentPoints-"+id).html(newPoints+"");
+      $(".userPointsInput-"+id).val("");
+
+      $.post("/updateuserpoints",{newPoints: newPoints, userId: id},function(res){   
+      });
+    }
+    function subtractPoints(id){
+      var currentPoints = parseInt($(".userCurrentPoints-"+id).html());
+      var subPoints = parseInt($(".userPointsInput-"+id).val());
+
+      var newPoints = currentPoints - subPoints;
+      $(".userCurrentPoints-"+id).html(newPoints+"");
+      $(".userPointsInput-"+id).val("");
+
+      $.post("/updateuserpoints",{newPoints: newPoints, userId: id},function(res){   
+      });
+    }
+    function banUser(id){
+      $('.userCard-'+id).remove();
+      $.post("/banuser",{userId: id},function(res){   
+      });
+    }
+  </script>
+
+</body>
+
+</html>

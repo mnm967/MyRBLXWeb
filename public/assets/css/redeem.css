@@ -1,0 +1,64 @@
+.payout-container{
+    background-color: #3298DC;
+    padding: 24px;
+}
+.currency-button{
+    background-color: #48c774;
+    border-color: #48c774 !important;
+    color: #fff;
+    height: 48px;
+    margin-bottom: 32px;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    cursor: default !important;
+}
+.payout-button-green{
+    background-color: #48c774;
+    border-color: #48c774 !important;
+    color: #fff;
+    height: 48px;
+    width: 100%;
+    margin-top: 16px;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+.payout-button-red{
+    background-color: #F14668;
+    border-color: #F14668 !important;
+    color: #fff;
+    height: 48px;
+    width: 100%;
+    margin-top: 16px;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+.payout-title{
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+}
+.payout-input-label{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 16px;
+}
+.payout-input{
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    padding: 0px 16px;
+}

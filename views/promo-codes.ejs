@@ -1,0 +1,59 @@
+<%- include('includes/header.ejs') -%>
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-12">
+            <div class="holder-container">
+              <div class="main-title-holder">
+                <h2 class="main-title-text">Want MORE Robux?</h2>
+              </div>
+              <div class="content-holder justify-content-center" style="display: grid;">
+                <div class="m-auto" style="width: fit-content; padding-bottom: 24px">
+                  <i class="fab fa-discord fa-7x" style="text-align: center; color: #fff" aria-hidden="true"></i>
+                </div>
+                <p class="main-content-text">Join our Discord Server to find out when we release codes for you to earn <strong style="color: #48c774">FREE</strong> Robux!</p>
+                <div class="copy-button-holder m-auto">
+                  <a href="https://www.discord.com/" target="_blank"><button class="btn mx-1 copy-button grow">Join Discord</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12 row">
+            <div class="col-12 p-0">
+              <div class="holder-container mx-0">
+                <div class="main-title-holder">
+                  <h2 class="main-title-text">Enter Promo Code:</h2>
+                </div>
+                <div class="content-holder" style="padding: 16px !important; display: grid;">
+                  <p class="main-content-text">Enter the Promo Code to claim your <strong style="color: #48c774">FREE</strong> Robux!</p>
+                  <form class="mx-auto redeemCodeRecaptchaForm" style="width: fit-content; margin-top: 16px; margin-bottom: 8px" action="?" method="POST">
+                    <div class="g-recaptcha" data-sitekey="6Lez6v4UAAAAAMP08eRkmdH_ZM-Nktd9YpysTVFD"></div>
+                  <div class="justify-content-center" style="display: grid;">
+                    <div class="copy-button-holder m-auto">  
+                      <input id="message" class="referral-link-input redeemPromoInput" style="border-radius: 8px !important;" type="text" value="" required/>
+                    </div>
+                    <div class="copy-button-holder m-auto"> 
+                      <button class="btn copy-link-button grow redeemRedeemButton" style="margin-top: 24px;" type="submit">Redeem</button>
+                    </div>
+                  </div> 
+                </form>
+              </div>
+              </div>
+            </div>
+            <div class="col-12 row m-0" style="padding: 0">
+              <div class="col-12">
+                <div class="holder-container-white mx-0">
+                  <div class="main-title-holder" style="border-bottom: 0.5px solid #bdbdbd; margin-bottom: 16px">
+                    <h2 class="main-title-text">Redeemed Codes:</h2>
+                  </div>
+                  <div class="row redeemedPromoList" style="padding-left: 24px;">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('includes/footer.ejs') -%>

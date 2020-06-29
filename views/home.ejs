@@ -1,0 +1,84 @@
+  <%- include('includes/header.ejs') -%>
+    <section>
+      <div class="container">
+        <div class="col-12 align-items-center" style="display: grid;">
+          <h1 class="title">Looking for Free Robux?!</h1>
+          <h1 class="subtitle">Well, you've come to the right place.<br>Start earning hundreds of Robux for FREE!!!</h1>
+          <% if(user_logged_in){ %>
+          <div class="button-div m-auto">
+            <a href="earn"><button class="btn logout-button grow" type="submit">Start Earning Robux NOW!!! <i class="fas fa-dollar-sign"></i></button></a>
+          </div>
+          <% } else { %>
+            <div class="button-div m-auto">
+              <button class="btn logout-button grow" data-toggle="modal" data-target="#login-modal">Start Earning Robux NOW!!! <i class="fas fa-dollar-sign"></i></button>
+            </div>
+          <% } %>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="col-12 align-items-center white-container">
+          <h1 class="title recent-title">About Roblox</h1>
+          <div class="recentEarningsContainerTEXT">
+            <p class="card-text px-5" style="color: #2C3E50; width: 100%; text-align: justify; font-size: 1.25rem; line-height: 1.5em;">
+              <br>Roblox is one of the most popular online multiplayer games. Roblox comes with a revolutionary game creation system. 
+              This allows users to create games and play dozens more created by other players.
+              <br><br>The platform includes virtual worlds covering dozens of genres, ranging from role-playing games to obstacle courses and racing. 
+              Roblox is one of the biggest games in the world with over 100 MILLION monthly active users.
+              <br><br>Roblox allows users to buy and sell virtual items. Various items can be bought using Roblox's main currency - Robux. 
+              Having Robux will significantly increase your gaming experience. 
+              <br><br>MyRBLX.com is one of the best websites to earn free Robux. 
+              We aim to provide you with the BEST Roblox gaming experience.
+              <br><br>What are you waiting for?
+              <br>
+              <br><br>Start Earning Now!!!
+             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="mx-1 my-2 white-container-instructions">
+              <img class="instruction-image" src="assets/img/icons/link.png" style="height: 100px;">
+              <h1 class="title instruction-title">1. Link Account</h1>
+              <p class="subtitle instruction-subtitle">
+                Link your account by entering your username, we will <strong>NEVER</strong> ask for your password.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="mx-1 my-2 white-container-instructions">
+              <img class="instruction-image" src="assets/img/icons/earn.png" style="height: 100px;">
+              <h1 class="title instruction-title">2. Earn Robux</h1>
+              <p class="subtitle instruction-subtitle">
+                Watch videos, complete surveys or download apps to earn ROBUX extremely fast!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="mx-1 my-2 white-container-instructions">
+              <img class="instruction-image" src="assets/img/icons/redeem.png" style="height: 100px;">
+              <h1 class="title instruction-title">3. Redeem Points</h1>
+              <p class="subtitle instruction-subtitle">
+              After earning a minimum of 5 R$ you can instantly withdraw the Robux directly into your Roblox account!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="col-12 align-items-center white-container">
+          <h1 class="title recent-title">Recent Earnings</h1>
+          <div class="recentEarningsContainer">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+<%- include('includes/footer.ejs') -%>
