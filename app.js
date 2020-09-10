@@ -18,18 +18,18 @@ server.listen(port);
 
 var SOCKET = {};
 
-var sqlconnection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'apkmrepr_user',
-    password : '(0G$X2!1!c)!',
-    database : 'apkmrepr_myrblx'
-});
 // var sqlconnection = mysql.createConnection({
 //     host     : 'localhost',
-//     user     : 'root',
-//     password : '',
-//     database : 'myrblx'
+//     user     : 'apkmrepr_user',
+//     password : '(0G$X2!1!c)!',
+//     database : 'apkmrepr_myrblx'
 // });
+var sqlconnection = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : '',
+    database : 'myrblx'
+});
 
 sqlconnection.connect(function(err) {
     if (err) throw err;

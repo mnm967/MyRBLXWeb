@@ -1,5 +1,5 @@
-//const socket = io.connect('http://localhost:4000', {secure: true});
-const socket = io.connect('wss://myrblx.com', {secure: true});
+const socket = io.connect('http://localhost:4000', {secure: true});
+//const socket = io.connect('wss://myrblx.com', {secure: true});
 
 var timeFunctionArr = [];
 var functionArr = [];
