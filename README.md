@@ -4,6 +4,8 @@ MyRBLX.com is a website for earning free Robux by completing surveys. It also in
 
 \**You can add custom admin/roblox group settings by modifying admin_group_details table in the MySQL database*\*
 
+# Screenshots
+
 ![8](https://github.com/mnm967/MyRBLXWeb/assets/67553368/b857b9a3-6dcb-46e8-8d11-bb1d99c04d9f)
 ![7](https://github.com/mnm967/MyRBLXWeb/assets/67553368/5f8b0c56-f77b-40e9-b9b0-8ba86b3ec083)
 ![6](https://github.com/mnm967/MyRBLXWeb/assets/67553368/3650885b-8b5c-4d4f-b5e4-c14240355e2e)
